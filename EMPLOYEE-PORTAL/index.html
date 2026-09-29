@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR PORTAL</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the company HR portal</h1>
+        <!-- navbar kind of thin banegi in unordered list form sections options clickable link ki for m me hongey list itmem ke andar -->
+        <nav>
+            <ul>
+
+                <li><a href="#Employee-registration">Employee Registration</a></li>
+                <li><a href="#Employee-directory">Employee-directory</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="Employee-registration">
+        <h2>Employee Registration</h2>
+        <p>Please fill the below form to register as an <em>Employee</em></p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name"> <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required> <br>
+
+            <label for="password">Passward:</label>
+            <input type="password" id="password"> <br>
+
+            <label for="age">Enter Age:</label>
+            <input type="number" id="age"> <br>
+            <br>
+            <label for="role">Select your job role:</label>
+            <select id="role">
+                <option>Software Engineer</option>
+                <option>Production Manager</option>
+                <option>UI/UX DESIGNER</option>
+                <option>HR Representatives</option>
+            </select> <br> <br>
+
+            <label for="date">Select joining date:</label>
+            <input type="date" id="date"> <br> <br>
+
+            <input type="submit">
+        </form>
+
+    </section>
+
+    <section id="Employee-directory">
+        <h2> EMPLOYEE DIRECTORY</h2>
+        <P>List of all registered employees</P>
+        <table border="">
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Role</th>
+            </tr>
+
+            <tr>
+                <td>11</td>
+                <td>Kavya</td>
+                <td>SOFTWARE ENGINEER</td>
+            </tr>
+
+            <tr>
+                <td>12</td>
+                <td>Kanha</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>parth</td>
+                <td>backend developer</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <P>You can contact us at mahajankavya76@gmail.com OR Visit us between 9am to 6pm</P>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13429.23981402926!2d74.85182080515344!3d32.70439052910141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e84b08c2b8865%3A0xe88106e206f5b95!2sGandhi%20Nagar%2C%20Jammu%20180004!5e0!3m2!1sen!2sin!4v1789647506626!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        <!-- it cintains document and copyright data -->
+        <footer>
+
+            &copy;2027HighIT INNOVATIONS </footer>
+    </section>
+</body>
+
+</html>

@@ -231,6 +231,88 @@ width / height
 Video size -->
     <video src="movie.mp4" height="" width="" autoplay controls muted poster="thumbnail.jpg"></video>
 </dl>
+
+
+<h1>CREATING A FORM</h1>
+<form>
+    <label for="firstname">FirstName:</label>
+    <input type="text" placeholder="Enter Firstname" id="firstname" required><br>
+    <label for="lastname">Lastname:</label>
+    <input type="text" placeholder="Enter Lastname" id="lastname" disabled><br>
+
+    <label for="email">ENTER YOUR EMAIL ID</label>
+    <input type="email" id="email" value="" placeholder="enter email"><br>
+
+    <label for="age">age:</label>
+    <input type="number" placeholder="enter age" id="age">
+
+    <label for="dob">DOB</label>
+    <input type="date" id="dob" value="">
+
+    <label for="time">time</label>
+    <input type="time" id="time">
+
+    <input type="range" min="11" max="22">
+
+    <label for="passward">Enter passward:</label>
+    <input type="password" placeholder="Enter Passward" id="passward"><br>
+    <!-- check box-- terms ----binary ---true or false and first take input like square box and after label -->
+    <input type="checkbox" id="terms" value="">
+    <label for="terms">I agree up on terms and conditions</label><br>
+
+    <!-- Radio button ---- choose single value from a set of options -->
+    <label for="Gender">Select your gender:</label>
+    <input type="radio" id="male" value="male" name="gender">
+    <label for="male">male</label>
+
+    <input type="radio" id="female" value="female" name="gender">
+    <label for="female">female</label> <br>
+
+    <label for="country">select your contry</label>
+    <select id="country">
+        <option value="India">India</option>
+        <option value="Pakistan">pakistan</option>
+        <option value="Afghnistan">afghanistan</option>
+
+
+    </select>
+    <br>
+
+
+    <textarea placeholder="enter your interest in registering" rows="5" cols="50"></textarea>
+
+
+
+    <br>
+    <label for="file">select file</label>
+    <input type="file" id="file" value="file" required multiple> <br>
+    <input type="submit"><br>
+    <input type="reset">
+
+
+
+    <!-- HTML ENTITIES -->
+    <p>Ampersand symbol: &amp; and &#38;</p>
+    <!-- ampersand -->
+    <!-- greater than -->
+
+    <P>this graeter than symbol: &gt;</P>
+    <!-- lesser than -->
+    <P>this less than symbol: &lt;</P>
+    <!-- copyright -->
+    <P>this copyright than symbol: &copy;</P>
+    <!-- euro -->
+    <P>this euro symbol: &euro;</P>
+    <!-- greek letter delta -->
+    <P>this greek letter delta symbol: &#916;</P>
+    <!-- right arrow -->
+    <P>this right arrow symbol: &#8594;</P>
+    <!-- check mark -->
+
+    <P>this check mark symbol: &#8730;</P>
+    <!-- degree -->
+    <p>DEGREE SYMBOL : 30&deg;</p>
+</form>
 </body>
 
 </html>
