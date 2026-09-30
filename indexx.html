@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Form</title>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form action="/submit-form" method="post" target="_self" enctype="multipart/form-data" autocomplete="on" novalidate>
+
+        <!-- Text Input -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" value="" required
+            minlength="3" maxlength="50" autocomplete="name">
+        <br><br>
+
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+        <br><br>
+
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required minlength="8"
+            maxlength="20">
+        <br><br>
+
+
+        <!-- Number -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" step="1" value="18" required>
+        <br><br>
+
+
+        <!-- Telephone -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" pattern="[0-9]{10}" required
+            autocomplete="tel">
+        <br><br>
+
+
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" min="1950-01-01" max="2026-12-31" required>
+        <br><br>
+
+
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+
+        <!-- Checkbox -->
+        <p>Skills:</p>
+
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="javascript" name="skills" value="javascript">
+        <label for="javascript">JavaScript</label>
+
+        <br><br>
+
+
+        <!-- Select / Dropdown -->
+        <label for="country">Country:</label>
+
+        <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select>
+
+        <br><br>
+
+
+        <!-- Multiple Select -->
+        <label for="languages">Languages:</label>
+
+        <select id="languages" name="languages" multiple size="3">
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="punjabi">Punjabi</option>
+            <option value="french">French</option>
+        </select>
+
+        <br><br>
+
+
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <br>
+
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Enter your message..." minlength="10"
+            maxlength="500" required></textarea>
+
+        <br><br>
+
+
+        <!-- File Upload -->
+        <label for="resume">Upload Resume:</label>
+
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" >
+
+        <br><br>
+
+
+        <!-- Color -->
+        <label for="color">Choose Color:</label>
+
+        <input type="color" id="color" name="color" value="#000000">
+
+        <br><br>
+
+
+        <!-- Range -->
+        <label for="experience">Experience:</label>
+
+        <input type="range" id="experience" name="experience" min="0" max="20" step="1" value="0">
+
+        <br><br>
+
+
+        <!-- URL -->
+        <label for="website">Website:</label>
+
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+
+        <br><br>
+
+
+        <!-- Search -->
+        <label for="search">Search:</label>
+
+        <input type="search" id="search" name="search" placeholder="Search here...">
+
+        <br><br>
+
+
+        <!-- Hidden Input -->
+        <input type="hidden" name="userId" value="12345">
+
+
+        <!-- Submit -->
+        <input type="submit" value="Submit Form">
+
+        <!-- Reset -->
+        <input type="reset" value="Reset Form">
+
+        <!-- Button -->
+        <button type="button">
+            Normal Button
+        </button>
+
+    </form>
+
+</body>
+
+</html>
